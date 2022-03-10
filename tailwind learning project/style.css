@@ -1,0 +1,56 @@
+.icon {
+  display: none;
+}
+
+#active {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  #active {
+    display: none;
+  }
+  #btn-r {
+    display: none;
+  }
+  .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu_active {
+    -ms-grid-rows: (minmax(0, 1fr))[6];
+        grid-template-rows: repeat(6, minmax(0, 1fr));
+  }
+}
+
+.glass-ui {
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    width: 100vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    overflow: scroll;
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+  }
+  .card .boxs {
+    width: 80vw;
+    height: 24rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

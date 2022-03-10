@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/6564e53a2a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="glider.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .icon {
+            display: none;
+        }
+
+        #active {
+            display: block;
+        }
+
+        @media only screen and (max-width:768px) {
+            #active {
+                display: none;
+                background-color: azure;
+            }
+
+            #btn-r {
+                display: none;
+            }
+
+            .icon {
+                display: flex;
+
+            }
+        }
+    </style>
+    <div
+        class="grid grid-rows-6 lg:h-auto md:h-auto h-screen md:flex md:items-center lg:flex bg-slate-500 menu lg:items-center lg:mt-4">
+        <div class=" flex  items-center">
+            <h1 class="ml-4 my-8  lg:my-0 capitalize text-4xl">WeSolves</h1>
+            <div class=" w-full mr-4 icon justify-end">
+                <button id="btn" onclick="menu()" class="w-11 rounded-md bg-white h-11 ">
+                    <i class="fa-solid fa-bars text-gray-500 text-2xl"></i>
+                </button>
+                <button id="btn-r" onclick="colap_menu()" class="w-11 rounded-md bg-white h-11 ">
+                    <i class="fa-solid fa-xmark text-gray-500 text-2xl"></i>
+                </button>
+            </div>
+
+
+        </div>
+        <nav id="active" class="w-full row-span-5">
+            <ul class="grid md:flex md:justify-end lg:flex mt-4 md:mt-0 lg:mt-0 lg:justify-end gap-4 mx-12">
+                <li class="capitalize text-xl">portfolio</li>
+                <li class="capitalize text-xl">about us</li>
+                <li class="capitalize text-xl">service</li>
+                <li class="capitalize text-xl">contact us</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="glider-contain multipe w-1/3">
+
+        <button aria-label="Previous" class="glider-prev">«</button>
+        <div class="glider">
+          <figure>
+              <blockquote>"how are you to day"</blockquote>
+              <figcaption>burhan sohan</figcaption>
+          </figure>
+          <figure>
+            <blockquote>"how are you to day"</blockquote>
+            <figcaption>burhan sohan</figcaption>
+        </figure>
+        <figure>
+            <blockquote>"how are you to day"</blockquote>
+            <figcaption>burhan sohan</figcaption>
+        </figure>
+        <figure>
+            <blockquote>"how are you to day"</blockquote>
+            <figcaption>burhan sohan</figcaption>
+        </figure>
+        </div>
+
+        <button aria-label="Next" class="glider-next">»</button>
+        <div role="tablist" class="dots"></div>
+      </div>
+
+
+
+    <script>
+        let hmenu = window.matchMedia("(min-width:769px)")
+        console.log(hmenu.matches)
+        menu = () => {
+            document.getElementById("active").style.display = "block";
+            document.getElementById("btn").style.display = "none";
+            document.getElementById("btn-r").style.display = "block";
+        }
+        colap_menu = () => {
+            document.getElementById("active").style.display = "none";
+            document.getElementById("btn").style.display = "block"
+            document.getElementById("btn-r").style.display = "none";
+        }
+
+        colap = () => {
+            if (hmenu.matches) {
+                document.getElementById("active").style.display = "block";
+
+            }
+            else {
+                document.getElementById("active").style.display = "none";
+                if (document.getElementById("btn").onclick == true) {
+                    () => {
+                        menu();
+                    }
+                }
+                else {
+                    colap_menu();
+                }
+            }
+        }
+
+        colap()
+
+        new Glider(document.querySelector('.glider'), {
+            slidesToShow: 1,
+            draggable: true,
+            dots: '.dots',
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            }
+        });
+    </script>
+    <script src="./glider.min.js"></script>
+</body>
+
+</html>
