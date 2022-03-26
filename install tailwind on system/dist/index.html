@@ -6,16 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wesolve</title>
-    <link rel="stylesheet" href="/input.css">
-    <link rel="stylesheet" href="/style.css">
+    
+    
     <script src="https://kit.fontawesome.com/6564e53a2a.js" crossorigin="anonymous"></script>
-
+   
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <style>
-
-    </style>
+    
 
 
     <div class="lg:container lg:mx-auto">
@@ -303,70 +302,7 @@
 
 
 
-    <script>
-        let mainslider = document.getElementById("slider");
-        let box = document.getElementsByClassName("item")
-
-        let next = () => {
-            mainslider.append(box[0]);
-        }
-        let prev = () => {
-            mainslider.prepend(box[box.length - 1]);
-        }
-
-
-
-
-
-        // when butten is close
-        let menu_open = () => {
-            document.getElementById("nav-mobile_close").id = "nav-mobile_open"
-            document.getElementById("menu-close").id = "menu-open";
-            document.getElementById("menu-close-btn").id = "menu-open-btn";
-            document.getElementById("nav").style.height = "100vh";
-        }
-        //   when butten is open
-        let menu_close = () => {
-            document.getElementById("nav-mobile_open").id = "nav-mobile_close";
-            document.getElementById("menu-open").id = "menu-close";
-            document.getElementById("menu-open-btn").id = "menu-close-btn";
-            document.getElementById("nav").style.height = "10vh"
-        }
-
-        // let hmenu = window.matchMedia("(min-width:769px)")
-        // console.log(hmenu.matches)
-        // menu = () => {
-        //     document.getElementById("active").style.display = "block";
-        //     document.getElementById("btn").style.display = "none";
-        //     document.getElementById("btn-r").style.display = "block";
-        // }
-        // colap_menu = () => {
-        //     document.getElementById("active").style.display = "none";
-        //     document.getElementById("btn").style.display = "block"
-        //     document.getElementById("btn-r").style.display = "none";
-        // }
-
-        // colap = () => {
-        //     if (hmenu.matches) {
-        //         document.getElementById("active").style.display = "block";
-
-        //     }
-        //     else {
-        //         document.getElementById("active").style.display = "none";
-        //         if (document.getElementById("btn").onclick == true) {
-        //             () => {
-        //                 menu();
-        //             }
-        //         }
-        //         else {
-        //             colap_menu();
-        //         }
-        //     }
-        // }
-
-        // colap()
-
-    </script>
+    <script src="/dist/index.js"></script>
 </body>
 
 </html>

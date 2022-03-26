@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/6564e53a2a.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- nav bar style  -->
+    <style>
+        .menu-close,
+        .menu-open {
+            display: none;
+        }
+
+        @media only screen and (max-width: 767px) {
+            html {
+                overflow-x: hidden;
+            }
+
+            body {
+                margin: 0px;
+                padding: 0px;
+
+                overflow-x: hidden;
+            }
+
+            .nav {
+                width: 100%;
+                height: 100vh;
+                position: relative;
+            }
+
+            .nav-mobile {
+                z-index: -999;
+                position: absolute;
+                top: 0px;
+            }
+
+            .nav-head {
+                z-index: 999;
+            }
+
+            #nav-mobile_close {
+
+                height: 100vh;
+                background-color: rgb(189, 209, 245);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 4rem;
+                padding-top: 4rem;
+
+                transition: margin-left 1s;
+
+                margin-left: 100vw;
+
+            }
+
+            #nav-mobile_open {
+                height: 100vh;
+                background-color: rgb(189, 209, 245);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 4rem;
+                padding-top: 4rem;
+                transition: margin-left 1s;
+                margin-left: 0px;
+
+            }
+
+            .menu-close,
+            .menu-open {
+                display: inline;
+            }
+
+            #menu-open {
+                display: none;
+            }
+
+            #menu-close-btn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- about us cards style  -->
+    <style>
+        #slider{
+            width: 25rem;
+            height: 16rem;
+            overflow: hidden;
+        }
+        .boxs{
+            width: 25rem;
+            height: 16rem;
+            background-color: beige;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <!-- service card style  -->
+    <style>
+        .card_stlye{
+            height: 22rem;
+            width: 15rem;
+            padding: 1rem;
+            border-radius: 10px;
+            
+        }
+        .card_stlye:hover{
+            box-shadow: rgb(94, 90, 90) 5px 5px 15px;
+        }
+        .butten{
+            display: none;
+        }
+        @media only screen and (max-width: 767px){
+            .card{
+                width: 20rem;
+                height: 22rem;
+                overflow: hidden;
+                display: grid;
+                
+            }
+            .card_stlye{
+            height: 22rem;
+            width: 20rem;
+            padding: 1rem;
+            border-radius: 10px;
+            transition: 2s;
+            
+           
+        } 
+        .butten{
+            display: flex;
+        }
+        }
+        
+    </style>
+    <!-- navbar  -->
+    <nav class="lg:flex md:flex md:items-center lg:items-center lg:pt-0 md:pt-0 pt-6 lg:mt-6 md:mt-6 nav">
+        <div class="flex nav-head">
+            <h1 class="ml-4 text-2xl">WeSolves</h1>
+            <div class="text-right w-full mr-4 ">
+                <button id="menu-close" class="menu-close border-black border-2 px-1" onclick="menu_open()"><i
+                        class="fa-solid fa-bars text-gray-500 text-2xl"></i></button>
+                <button id="menu-close-btn" class="menu-open border-black border-2 px-2" onClick="menu_close()"><i
+                        class="fa-solid fa-xmark text-gray-500 text-2xl"></i></button>
+            </div>
+        </div>
+
+        <ul id="nav-mobile_close"
+            class="lg:flex lg:justify-end md:flex md:justify-end w-full lg:gap-4 lg:mr-8 md:mr-6 md:gap-4 nav-mobile">
+            <li class="text-lg capitalize"><a href="#" class="">portfolio</a></li>
+            <li class="text-lg capitalize"><a href="#" class="">about us</a></li>
+            <li class="text-lg capitalize"><a href="#" class="">service</a></li>
+            <li class="text-lg capitalize"><a href="#" class="">contact us</a></li>
+        </ul>
+
+
+    </nav>
+    <!-- card style  -->
+
+    <div class="">
+        <div class="cards">
+
+            <div id="slider" class="md:w-2/3 md:mx-auto  mx-4  rounded-lg">
+                <!-- card 1 -->
+                <div class="flex boxs glass-ui flex-col item items-center m-2 ">
+                    <p class="text-sm text-center mb-1 mx-6">
+                        Lorem Ipsum is simply dummy
+                        text of the printing and typesetting
+                        industry. Lorem Ipsum has been
+                        the industry's standard dummy
+                        text ever since the 1500s, when
+                        an unknown printer took a galley
+                        of type and scrambled it to make
+                        a type specimen book.</p>
+                    <div class="picback"><img src="../assets/snipfeed.jpg" alt="snipfeed"
+                            class="image w-16 rounded-full"></div>
+                    <h1 class="thead text-xl font-semibold">Snipfeed</h1>
+                    <h1 class="ttitle text-gray-800">Ecomerce For Digital Goods</h1>
+                </div>
+                <!-- card 2 -->
+                <div class="flex boxs glass-ui flex-col item items-center m-2 ">
+                    <p class="text-sm text-center mb-1 mx-6">
+                        Lorem Ipsum is simply dummy
+                        text of the printing and typesetting
+                        industry. Lorem Ipsum has been
+                        the industry's standard dummy
+                        text ever since the 1500s, when
+                        an unknown printer took a galley
+                        of type and scrambled it to make
+                        a type specimen book.</p>
+                    <div class="picback"><img src="../assets/snipfeed.jpg" alt="snipfeed"
+                            class="image w-16 rounded-full"></div>
+                    <h1 class="thead text-xl font-semibold">Appen</h1>
+                    <h1 class="ttitle text-gray-800">Ecomerce For Digital Goods</h1>
+                </div>
+            </div>
+
+        </div>
+        <div class="lg:my-4 mt-2 flex justify-center">
+            <button class="" onclick="prev()"><i
+                    class="fa mx-4 w-10 text-center hover:bg-white hover:text-slate-500 bg-slate-500 text-white text-4xl rounded-full fa-caret-left"
+                    aria-hidden="true"></i></button>
+            <button class="" onclick="next()"><i
+                    class="fa mx-4 w-10 text-center hover:bg-white hover:text-slate-500 bg-slate-500 text-white text-4xl rounded-full fa-caret-right"
+                    aria-hidden="true"></i></button>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- service section cards -->
+    <section class="">
+        <div class="flex justify-center">
+            <!-- cards  -->
+            <div id="cards" class="flex justify-center gap-4 my-4 card">
+                <!-- card 1 -->
+                <div id="card_style" class="card_stlye grid items-center justify-items-center bg-slate-400">
+                    <img src="../assets/react developer.jpg" alt="" class=" w-36 h-36 rounded-full">
+                    <h1 class="text-xl font-semibold">React Developer</h1>
+                    <p class="text-center text-sm text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates numquam, maxime delectus ipsa harum commodi.</p>
+                </div>
+                <!-- card 2 -->
+                <div id="card_style" class="card_stlye grid items-center justify-items-center bg-slate-400">
+                    <img src="../assets/react developer.jpg" alt="" class=" w-36 h-36 rounded-full">
+                    <h1 class="text-xl font-semibold">web Developer</h1>
+                    <p class="text-center text-sm text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates numquam, maxime delectus ipsa harum commodi.</p>
+                </div>
+                <!-- card 3 -->
+                <div id="card_style" class="card_stlye grid items-center justify-items-center bg-slate-400">
+                    <img src="../assets/react developer.jpg" alt="" class=" w-36 h-36 rounded-full">
+                    <h1 class="text-xl font-semibold">UI Designer</h1>
+                    <p class="text-center text-sm text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates numquam, maxime delectus ipsa harum commodi.</p>
+                </div>
+            </div>
+        </div>
+        <div class="butten lg:my-4 mt-2  justify-center">
+            <button class="" onclick="prev()"><i
+                    class="fa mx-4 w-10 text-center hover:bg-white hover:text-slate-500 bg-slate-500 text-white text-4xl rounded-full fa-caret-left"
+                    aria-hidden="true"></i></button>
+            <button class="" onclick="next()"><i
+                    class="fa mx-4 w-10 text-center hover:bg-white hover:text-slate-500 bg-slate-500 text-white text-4xl rounded-full fa-caret-right"
+                    aria-hidden="true"></i></button>
+
+        </div>
+    </section>
+
+    <script>
+        // when butten is close
+        let menu_open = () => {
+            document.getElementById("nav-mobile_close").id = "nav-mobile_open"
+            document.getElementById("menu-close").id = "menu-open";
+            document.getElementById("menu-close-btn").id = "menu-open-btn";
+        }
+        //   when butten is open
+        let menu_close = () => {
+            document.getElementById("nav-mobile_open").id = "nav-mobile_close";
+            document.getElementById("menu-open").id = "menu-close";
+            document.getElementById("menu-open-btn").id = "menu-close-btn";
+        }
+
+        // aboutus slider action
+        let box_slide=document.getElementById("slider");
+        let box=document.getElementsByClassName("item");
+
+        prev=()=>{
+            box_slide.append(box[0])
+        }
+        next=()=>{
+            box_slide.prepend(box[box.length-1])
+        }
+
+         // service slider action
+         let card_slide=document.getElementById("cards");
+        let card=document.getElementsByClassName("card_stlye");
+
+        prev=()=>{
+            card_slide.append(card[0])
+           
+        }
+        next=()=>{
+            card_slide.prepend(card[card.length-1]);
+           
+        }
+        
+    </script>
+</body>
+
+</html>

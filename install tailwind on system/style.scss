@@ -1,29 +1,99 @@
-.icon {
+// .icon {
+//     display: none;
+// }
+
+// #active {
+//     display: block;
+// }
+.menu-close, .menu-open{
+    display: none;
+}
+@media only screen and (max-width: 767px) {
+    html{
+    overflow-x: hidden;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    
+    overflow-x: hidden;
+}
+.nav{
+    width: 100%;
+    // height: 100vh;
+    position: relative;
+}
+.nav-mobile{
+    z-index: -3;
+    position: absolute;
+   top: 0px;
+}
+.nav-head{
+    z-index: 3;
+}
+#nav{
+    transition: height 1s;
+    
+}
+#nav-mobile_close {
+    
+    height: 100vh;
+    background-color: rgb(189, 209, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding-top: 4rem;
+    
+    transition: margin-left 1s;
+    
+    margin-left: 100vw;
+    
+}
+#nav-mobile_open{
+    height: 100vh;
+    background-color: rgb(189, 209, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding-top: 4rem;
+    transition: margin-left 1s;
+    margin-left: 0px;
+    
+}
+.menu-close, .menu-open{
+    display: inline;
+}
+#menu-open {
     display: none;
 }
 
-#active {
-    display: block;
+#menu-close-btn{
+    display: none;
+}
 }
 
-@media only screen and (max-width:768px) {
-    #active {
-        display: none;
-    }
+// @media only screen and (max-width:768px) {
+//     #active {
+//         display: none;
+//     }
 
-    #btn-r {
-        display: none;
-    }
+//     #btn-r {
+//         display: none;
+//     }
 
-    .icon {
-        display: flex;
-    }
+//     .icon {
+//         display: flex;
+//     }
 
-    .menu_active {
-        grid-template-rows: repeat(6, minmax(0, 1fr));
+//     .menu_active {
+//         grid-template-rows: repeat(6, minmax(0, 1fr));
 
-    }
-}
+//     }
+// }
 
 .glass-ui {
     background: rgba(255, 255, 255, 0.25);
@@ -33,7 +103,19 @@
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
-
+#slider{
+    width: 27rem;
+    height: 17rem;
+    overflow: hidden;
+    
+    .boxs{
+    width: 27rem;
+    height: 17rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+}
 // service section css
 @media screen and (max-width:700px) {
     .card{
@@ -52,7 +134,23 @@
         margin-right:10vw;
     }
 }
+#slider{
+    width: auto;
+    height: 16rem;
+    overflow: hidden;
+    
+    .boxs{
+    width: auto;
+    height: 16rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
 }
+}
+}
+// mobile potrate mode
 
+
+    
   
   

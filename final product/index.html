@@ -6,16 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wesolve</title>
-    <link rel="stylesheet" href="/input.css">
-    <link rel="stylesheet" href="/style.css">
+    
+    
     <script src="https://kit.fontawesome.com/6564e53a2a.js" crossorigin="anonymous"></script>
-
+   
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <style>
-
-    </style>
+    
 
 
     <div class="lg:container lg:mx-auto">
@@ -94,7 +93,7 @@
 
         <!-- about us sections -->
         <section id="aboutus" class="">
-            <div class="">
+            <div class="lg:h-screen">
                 <h1 class=" capitalize font-bold text-xl text-center"> about us</h1>
                 <hr class="border-2 mb-4 w-1/4 mx-auto">
                 <div class="mobile-p bg-purple-300 md:h-5/6  h-screen lg:h-5/6 mt-2 lg:flex">
@@ -114,7 +113,7 @@
                             </div>
 
                             <div class="flex justify-center mb-2 lg:mb-4">
-                                <button class="btn bg-purple-600 lg:p-4 lg:mt-4 rounded-lg p-3">Get Started</button>
+                                <button class="btn bg-purple-600 lg:p-4 lg:mt-4 rounded-lg p-3 btn-effect"> <a href="#contactus" class="effect">Get Started</a> </button>
                             </div>
                         </div>
                         <!-- about us card section  -->
@@ -152,7 +151,7 @@
                                             an unknown printer took a galley
                                             of type and scrambled it to make
                                             a type specimen book.</p>
-                                        <div class="picback"><img src="../assets/snipfeed.jpg" alt="snipfeed"
+                                        <div class="picback"><img src="./assets/apen-logo.png" alt="snipfeed"
                                                 class="image w-16 rounded-full"></div>
                                         <h1 class="thead text-xl font-semibold">Appen</h1>
                                         <h1 class="ttitle text-gray-800">Ecomerce For Digital Goods</h1>
@@ -183,7 +182,7 @@
         </section>
         <!-- service section box -->
         <section id="service" class="">
-            <div class="h-screen lg:h-screen md:h-fit lg:mt-0 mt-12">
+            <div class="lg:h-screen md:h-fit lg:mt-0 mt-12">
                 <h1 class="capitalize font-bold text-xl text-center"> service</h1>
                 <hr class="border-2 mb-4 w-1/4 mx-auto">
                 <div class="lg:bg-purple-600 lg:mt-0 lg:flex md:h-5/6 md:grid lg:h-5/6 lg:p-4">
@@ -196,24 +195,54 @@
                                     reiciendis itaque aspernatur quis eveniet sequi cupiditate, iure ex consectetur
                                     tempore corporis nam! Libero vitae ab numquam beatae assumenda sapiente obcaecati
                                     aperiam, odio laudantium voluptates animi consectetur?</p>
-                                <button class="w-36 mt-5 rounded-xl h-10 bg-purple-700">Portfolio</button>
+                                <button class="w-36 mt-5 rounded-xl h-10 bg-purple-700 btn-effect">Portfolio</button>
                             </div>
                         </div>
                     </div>
-                    <div class="lg:w-2/3">
+                    <div class="lg:w-2/3 ">
                         <div
-                            class="card md:h-screen  w-full lg:h-full md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 lg:items-center md:items-center md:justify-items-center lg:justify-items-center">
-                            <div class="bg-slate-600 md:gap-2 md:w-1/2 md:h-5/6 lg:w-4/6 lg:h-5/6 boxs rounded-xl">
+                            class="card md:h-screen lg:h-full md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 lg:items-center md:items-center md:justify-items-center lg:justify-items-center service_card">
+                            <div class="bg-slate-500 md:gap-2  boxs rounded-xl">
+                                <div id="card_style" class="card_stlye grid items-center justify-items-center bg-slate-400">
+                                    <img src="../assets/react developer.jpg" alt="" class=" w-36 h-36 rounded-full">
+                                    <h1 class="text-xl font-semibold">React Developer</h1>
+                                    <p class="text-center text-sm text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates numquam, maxime delectus ipsa harum commodi.</p>
+                                </div>
                             </div>
-                            <div class="bg-slate-600 md:gap-2 md:w-1/2 md:h-5/6 lg:w-4/6 lg:h-5/6 boxs rounded-xl">
+                            <div class="bg-slate-500 md:gap-2 boxs rounded-xl">
+                                <div id="card_style" class="card_stlye grid items-center justify-items-center bg-slate-400">
+                                    <img src="../assets/react developer.jpg" alt="" class=" w-36 h-36 rounded-full">
+                                    <h1 class="text-xl font-semibold">React Developer</h1>
+                                    <p class="text-center text-sm text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates numquam, maxime delectus ipsa harum commodi.</p>
+                                </div>
                             </div>
-                            <div class="bg-slate-600 md:gap-2 md:w-1/2 md:h-5/6 lg:w-4/6 lg:h-5/6 boxs rounded-xl">
+                            <div class="bg-slate-500 md:gap-2 boxs rounded-xl">
+                                <div id="card_style" class="card_stlye grid items-center justify-items-center bg-slate-400">
+                                    <img src="../assets/react developer.jpg" alt="" class=" w-36 h-36 rounded-full">
+                                    <h1 class="text-xl font-semibold">React Developer</h1>
+                                    <p class="text-center text-sm text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates numquam, maxime delectus ipsa harum commodi.</p>
+                                </div>
                             </div>
-                            <div class="bg-slate-600 md:gap-2 md:w-1/2 md:h-5/6 lg:w-4/6 lg:h-5/6 boxs rounded-xl">
+                            <div class="bg-slate-500 md:gap-2 boxs rounded-xl">
+                                <div id="card_style" class="card_stlye grid items-center justify-items-center bg-slate-400">
+                                    <img src="../assets/react developer.jpg" alt="" class=" w-36 h-36 rounded-full">
+                                    <h1 class="text-xl font-semibold">React Developer</h1>
+                                    <p class="text-center text-sm text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates numquam, maxime delectus ipsa harum commodi.</p>
+                                </div>
                             </div>
-                            <div class="bg-slate-600 md:gap-2 md:w-1/2 md:h-5/6 lg:w-4/6 lg:h-5/6 boxs rounded-xl">
+                            <div class="bg-slate-500 md:gap-2 boxs rounded-xl">
+                                <div id="card_style" class="card_stlye grid items-center justify-items-center bg-slate-400">
+                                    <img src="../assets/react developer.jpg" alt="" class=" w-36 h-36 rounded-full">
+                                    <h1 class="text-xl font-semibold">React Developer</h1>
+                                    <p class="text-center text-sm text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates numquam, maxime delectus ipsa harum commodi.</p>
+                                </div>
                             </div>
-                            <div class="bg-slate-600 md:gap-2 md:w-1/2 md:h-5/6 lg:w-4/6 lg:h-5/6 boxs rounded-xl">
+                            <div class="bg-slate-500 md:gap-2 boxs rounded-xl">
+                                <div id="card_style" class="card_stlye grid items-center justify-items-center bg-slate-400">
+                                    <img src="../assets/react developer.jpg" alt="" class=" w-36 h-36 rounded-full">
+                                    <h1 class="text-xl font-semibold">React Developer</h1>
+                                    <p class="text-center text-sm text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates numquam, maxime delectus ipsa harum commodi.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -243,7 +272,7 @@
                             class="capitalize text-xl lg:mx-6 my-2 lg:mt-4 lg:mb-2 font-semibold">message</label>
                         <textarea type="text"
                             class="h-36 lg:mx-6 outline-none bg-slate-300 text-xl rounded-lg"></textarea>
-                        <button class="w-40 lg:mt-7 mt-4 mx-auto rounded-xl h-12 bg-purple-700">Portfolio</button>
+                        <button class="w-40 lg:mt-7 mt-4 mx-auto rounded-xl h-12 bg-gray-300 btn-effect">Submit</button>
                     </div>
                 </div>
                 <div class=" grid justify-items-center content-center lg:content-between lg:w-5/6 lg:order-2">
@@ -303,70 +332,7 @@
 
 
 
-    <script>
-        let mainslider = document.getElementById("slider");
-        let box = document.getElementsByClassName("item")
-
-        let next = () => {
-            mainslider.append(box[0]);
-        }
-        let prev = () => {
-            mainslider.prepend(box[box.length - 1]);
-        }
-
-
-
-
-
-        // when butten is close
-        let menu_open = () => {
-            document.getElementById("nav-mobile_close").id = "nav-mobile_open"
-            document.getElementById("menu-close").id = "menu-open";
-            document.getElementById("menu-close-btn").id = "menu-open-btn";
-            document.getElementById("nav").style.height = "100vh";
-        }
-        //   when butten is open
-        let menu_close = () => {
-            document.getElementById("nav-mobile_open").id = "nav-mobile_close";
-            document.getElementById("menu-open").id = "menu-close";
-            document.getElementById("menu-open-btn").id = "menu-close-btn";
-            document.getElementById("nav").style.height = "10vh"
-        }
-
-        // let hmenu = window.matchMedia("(min-width:769px)")
-        // console.log(hmenu.matches)
-        // menu = () => {
-        //     document.getElementById("active").style.display = "block";
-        //     document.getElementById("btn").style.display = "none";
-        //     document.getElementById("btn-r").style.display = "block";
-        // }
-        // colap_menu = () => {
-        //     document.getElementById("active").style.display = "none";
-        //     document.getElementById("btn").style.display = "block"
-        //     document.getElementById("btn-r").style.display = "none";
-        // }
-
-        // colap = () => {
-        //     if (hmenu.matches) {
-        //         document.getElementById("active").style.display = "block";
-
-        //     }
-        //     else {
-        //         document.getElementById("active").style.display = "none";
-        //         if (document.getElementById("btn").onclick == true) {
-        //             () => {
-        //                 menu();
-        //             }
-        //         }
-        //         else {
-        //             colap_menu();
-        //         }
-        //     }
-        // }
-
-        // colap()
-
-    </script>
+    <script src="/index.js"></script>
 </body>
 
 </html>
